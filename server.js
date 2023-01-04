@@ -545,7 +545,7 @@ app.post("/product", function (req, res) {
     var images = [];
     for (i = 0; i < 3; i++) {
         if (imagearray[i] != undefined)
-            images.push('https://blhouse.herokuapp.com/images/' + resproducts[0].value + '/' + imagearray[i] + '.png');
+            images.push('https://blhouse.onrender.com/images/' + resproducts[0].value + '/' + imagearray[i] + '.png');
     }
     console.log(similar);
     res.send({ st: 100, product: { ...resproducts[0], images }, similar });
